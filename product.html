@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="product.css">
+    
+</head>
+<body>
+     <!-- header page starts here -->
+     <header class="header">
+        <h1>Ecommerce</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="buttons">
+            <a href=""><button><i class="fa-solid fa-right-to-bracket"></i>Login</button></a>
+            <a href="contact.html"><button> <i class="fa-solid fa-user-plus"></i>Register</button></a>
+            <a href="cart.html"><button><i class="fa-solid fa-cart-shopping" id="cart-btn"></i>Carts (0)</button></a>
+
+        </div>
+     </header>
+     <!-- header ends here1 -->
+
+      <!-- section 1  starts here -->
+      <!-- <section class="sec1">
+        <div class="text-content">
+            <h2>New Season Arrivals</h2>
+            <p>This a wider card with supporting text below as a natural lead-in to additional content.This Conent is a little bit longer</p>
+        </div>
+       
+       </section> -->
+       <!-- section 1 ends here -->
+        <section class="sec2">
+              
+                <h3>Latest Products</h3>
+                
+              
+        </section>
+        <section class="sec3">
+            <button onclick="filteredProducts('all')">All</button>
+            <button onclick="filteredProducts('men\'s clothing')">Men's Clothing</button>
+            <button onclick="filteredProducts('women\'s clothing')">Women's Clothing</button>
+            <button onclick="filteredProducts('jewelery')">Jewellery</button>
+            <button onclick="filteredProducts('electronics')">Electronics</button>
+        </section>
+        <!-- product section -->
+         <section class="products" id="product-container">
+           <!-- <div class="card">
+            <img src="images/Contact us.png" alt="img1">
+            <div class="title">
+                <h4>Product-Title</h4>
+                <p>cotton tees and created by automn fall</p>
+                <h3>$ 340</h3>
+                <button class="btns">Details</button>
+                <button class="btns">Add to cart</button>
+            </div>
+
+          </div>  -->
+         </section>
+         <div class="copyright">
+            <h2>Made With 💛 by Pitchandi</h2>
+           </div>
+
+<script src="product.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+         /* header page styling starts here */
+         .header{
+            display: flex;
+            margin: 0 10px 0 10px;
+            background-color: #f5f2f2;
+        }
+        .header h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 40px;
+        }
+        .navigation{
+            margin-left: 70px;
+        }
+        .navigation ul {
+            margin: 30px 0 0 50px;
+            display: flex;
+           
+        }
+        .navigation ul li{
+            list-style: none;
+        }
+        .navigation ul li a{
+            margin: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: #808080;
+            font-size: 20px;
+            
+        }
+        .buttons{
+            margin: 20px 0 0 100px;
+        }
+        .buttons button{
+            padding: 10px 20px;
+            margin-left: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        /* header page styling ends here */
+        /* section 1 style starts here */
+        .sec1{
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        /* section 1 style ends here */
+
+        /* section 2 style starts here */
+        .sec2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            word-spacing: 4px;
+            line-height: 30px;
+            color: #808080;
+            margin: 0 30px 0 30px;
+            text-align: center;
+        }
+        .sec2 h3{
+            color: black;
+            font-size: 30px;
+        }
+        /* section 2 style ends here */
+        .card-section{
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0 30px 0 30px;
+        }
+        .card img{
+            width: 250px;
+            object-fit: cover;
+            border-radius: 10px  10px 0 0;
+        }
+        .card{
+            border: 0.2px solid rgb(189, 188, 188);
+            text-align: center;
+            border-radius: 10px;
+            /* box-shadow: 2px 2px 3px 4px rgb(214, 132, 132); */
+        }
+        .copyright{
+            text-align: center;
+            font-family: 10px;
+            margin-top: 50px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }

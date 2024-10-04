@@ -1,0 +1,130 @@
+  /* header page styling starts here */
+  .header{
+    display: flex;
+    margin: 0 10px 0 10px;
+    background-color: #f5f2f2;
+}
+.header h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 40px;
+}
+.navigation{
+    margin-left: 70px;
+}
+.navigation ul {
+    margin: 30px 0 0 50px;
+    display: flex;
+   
+}
+.navigation ul li{
+    list-style: none;
+}
+.navigation ul li a{
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #808080;
+    font-size: 20px;
+    
+}
+.buttons{
+    margin: 20px 0 0 100px;
+}
+.buttons button{
+    padding: 10px 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+/* header page styling ends here */
+
+/* section 1 styling starts here  */
+.sec1{
+    background-image: url('images/main.png.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    
+}
+.sec1{
+    height: 500px;
+    width: 99%;
+    color: white;
+}
+.text-content{
+    position: relative;
+    top: 160px;
+    left: 20px;
+  
+}
+.text-content h2{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 50px;
+}
+.text-content p{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 28px;
+}
+.buttons button i {
+padding-right: 10px;
+}
+.buttons button{
+font-size: 15px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contact-text{
+margin-top: 30px;
+height: 60px;
+box-shadow: 0px 0px 13px 0px rgb(226, 222, 222);
+
+}
+.contact-text h1{
+text-align: center;
+align-items: center;
+padding-top: 10px;
+}
+
+/* section 1 styling ends here */
+
+/* form section stars here */
+.form-container{
+    margin-top: 30px;
+    padding: 10px;
+    
+}
+.form-container form{
+
+margin-left: 40%;
+}
+label{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input{
+height: 20px;
+width: 280px;
+padding: 5px 5px 5px 10px;
+margin: 7px 0 10px 0;
+/* margin-top: 20px; */
+border-radius: 4px;
+border: 0.5px solid rgb(187, 187, 187);
+}
+#textarea{
+height: 100px;
+}
+.send-btn{
+margin: 20px 0 10px 120px;
+padding: 7px 17px;
+color: #f5f2f2;
+background-color: #808080;
+border-radius: 5px;
+font-size: 15px;
+border: none;
+}
+/* form section ends here */
+.copyright{
+text-align: center;
+font-family: 10px;
+margin-top: 50px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

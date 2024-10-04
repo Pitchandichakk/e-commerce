@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart-part</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        /* header page styling starts here */  
+          .header{
+            display: flex;
+            margin: 0 10px 0 10px;
+            background-color: #f5f2f2;
+        }
+        .header h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 40px;
+        }
+        .navigation{
+            margin-left: 70px;
+        }
+        .navigation ul {
+            margin: 30px 0 0 50px;
+            display: flex;
+           
+        }
+        .navigation ul li{
+            list-style: none;
+        }
+        .navigation ul li a{
+            margin: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: #808080;
+            font-size: 20px;
+            
+        }
+        .buttons{
+            margin: 20px 0 0 100px;
+        }
+        .buttons button{
+            padding: 10px 20px;
+            margin-left: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        /* header page styling ends here */
+        /* section style starts here */
+        .sec1{
+            /* border: 0.3px solid black; */
+            /* height: 400px; */
+            margin-top: 30px;
+
+    
+
+        }
+        .text{
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+            
+        }
+        .empty-cart{
+            text-align: center;
+            align-content: center;
+            background-color: #c0b9b9;
+            height: 400px;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 30px 60px 0 60px;
+            
+        }
+        .empty-cart a h5{
+          background-color: #d8cac9;
+          border-radius: 6px;
+          padding: 8px 7px;
+          width: 200px;
+          margin-left: 500px;
+          border: 1px solid black;
+          
+        }
+        .empty-cart a i{
+            margin-right: 6px;
+            background-color: black;
+            color: #d8cac9;
+            border-radius: 50%;
+            padding: 6px;
+
+        }
+        .empty-cart a{
+            text-decoration: none;
+            color: black;
+        }
+        /* section  style ends here*/
+
+        /* starts here */
+        a:hover{
+    color: black;
+}
+.auth-links a {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.auth-links a:hover {
+    background-color: #eee;
+}
+.mycart12
+{
+    display: flex;
+}
+#checkout{
+    color: white;
+    background-color: black;
+}
+#checkout:hover{
+    color: white;
+    background-color: #181717;
+    border: 3px solid gray;
+}
+
+.container1 {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    flex: 1;
+}
+.cart-summary {
+    text-align: center;  
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    flex: 1;
+   
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cart-grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.cart-item-details {
+    flex: 1;
+    padding: 0 20px;
+}
+.cart-item-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.cart-item-price {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+#cart-total-price{
+    color: rgb(248, 79, 79);
+}
+.cart-item-quantity {
+    display: flex;
+    position: relative;
+    left: 80%;
+    bottom: 20px;
+}
+.cart-item-quantity button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.cart-item-quantity span {
+    font-size: 16px;
+}
+
+.cart-summary p {
+    font-size: 18px;
+    margin-bottom: 10px;
+   
+}
+.cart-summary button {
+    background-color: #9c9f9c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.cart-summary button:hover{
+    background-color: black;
+    color: white;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+.cart11
+{
+    /* border: 1px solid black; */
+    margin: 10px ;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.footer{
+    margin-top: 4%;
+    margin-left: 45%;
+}
+#heart_color{
+    color: rgb(251, 255, 0);
+}
+</style>
+
+</head>
+<body>
+    <!-- header page starts here -->
+    <header class="header">
+        <h1>Ecommerce</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="buttons">
+            <a href="login.html"><button><i class="fa-solid fa-right-to-bracket"></i>Login</button></a>
+            <a href="login.html"><button> <i class="fa-solid fa-user-plus"></i>Register</button></a>
+            <a href="cart.html"><button><i class="fa-solid fa-cart-shopping"></i>Carts <span>(0)</span></button></a>
+ 
+         </div>
+     </header>
+     <!-- header ends here1 -->
+      <!-- <section class="sec1">
+        <h2 class="text">Cart</h2>
+        <hr>
+        <div class="empty-cart">
+          <h2>Your Cart Is Empty</h2>
+          <a href="product.html"><h5><i class="fa-solid fa-arrow-left-long"></i>Continue Shopping</h5></a>
+        </div>
+      </section> -->
+
+      <div class="mycart12">
+        <div class="container1">
+            <h2 class="title">My Cart</h2>
+            <div class="cart-grid" id="cart-container">
+            </div>
+            
+        </div>
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="cart11">
+                    <p>Shipping:$<span id="cart-total-price1">30</span></p>  
+                <p>Total: $<span id="cart-total-price">0.00</span></p>
+                <button onclick="checkout()" id="checkout">Go to checkout</button>
+                </div>
+            </div>
+        </div>
+
+      <script>
+        function loadCart(){
+            const cart = JSON.parse(localStorage.getItem('cart'))||[];
+            displaycartItems(cart);
+            updateCartSummary(cart);
+        }
+        // Display cart Items
+
+        function displaycartItems(cart){
+            const cartContainer = document.getElementById('cart-container');
+            cartContainer.innerHTML = '';
+
+            if(cart.length === 0){
+                cartContainer.innerHTML = '<h3>Your Cart is Empty</h3>';
+                return;
+            }
+
+            cart.forEach(product => {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+
+                cartItem.innerHTML =  cartItem.innerHTML = `
+            <img src="${product.image}" alt="${product.title}">
+            <div class="cart-item-details">
+                <h4 class="cart-item-title">${product.title}</h4>
+                <p class="cart-item-price">$${product.price}</p>
+                <div class="cart-item-quantity">
+                    <button onclick="updateQuantity(${product.id}, -1)">-</button>
+                    <span>${product.quantity}</span>
+                    <button onclick="updateQuantity(${product.id}, 1)">+</button>
+                </div>
+            </div>
+
+        `
+        cartContainer.appendChild(cartItem);
+    });
+}
+
+// Update quantity in cart
+function updateQuantity(productId, delta) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const productIndex = cart.findIndex(product => product.id === productId);
+
+        if (productIndex > -1) {
+        cart[productIndex].quantity += delta;
+
+        if (cart[productIndex].quantity === 0) {
+            cart.splice(productIndex, 1); // Remove product quantity is 0
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart();
+    }
+}
+
+// Remove product from cart
+function removeFromCart(productId) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart = cart.filter(product => product.id !== productId);
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    loadCart();
+}
+
+// Update cart summary (total price)
+function updateCartSummary(cart) {
+    const totalPrice = cart.reduce((total, product) => 30+total + (product.price * product.quantity), 0);
+    document.getElementById('cart-total-price').innerText = totalPrice.toFixed(2);
+}
+
+// Checkout (placeholder)
+function checkout() {
+    alert('Proceeding to checkout...');
+// You can implement checkout functionality here
+}
+
+ // Update cart count in header
+ function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartCount = cart.reduce((total, product) => total + product.quantity, 0);
+    document.querySelector('#nav_btn4').innerHTML = `<i class="fa-solid fa-cart-shopping"></i> Cart (${cartCount})`;
+}
+// Load the cart when the page loads
+window.onload = loadCart;
+          
+      </script>
+
+    
+</body>
+</html>
